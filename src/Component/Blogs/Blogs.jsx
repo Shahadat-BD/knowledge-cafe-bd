@@ -9,7 +9,7 @@ const Blogs = () => {
     const [readingTime,setReadingTime] =  useState(0)
 
     useEffect(()=>{
-        fetch('/public/blog.json')
+        fetch('../../../public/blog.json')
         .then(res => res.json())
         .then(data => setBlogs(data))
     },[])
